@@ -1,0 +1,74 @@
+{
+  "device": "cuda",
+  "epochs": 18,
+  "batch_size": 256,
+  "subset_size": 96000,
+  "base_hidden": [
+    192,
+    128
+  ],
+  "half_hidden": [
+    103,
+    68
+  ],
+  "third_hidden": [
+    70,
+    47
+  ],
+  "results": [
+    {
+      "name": "Exp1 Adam LR sweep best (lr=0.001)",
+      "final_loss": 0.006574994016438723,
+      "convergence_time_sec": 8.148946999979671,
+      "convergence_epoch": 1,
+      "converged": true,
+      "nn_params": 176714,
+      "total_params": 176714
+    },
+    {
+      "name": "Exp2 Gradient step-size",
+      "final_loss": 0.3183708739757538,
+      "convergence_time_sec": 49.16622680000728,
+      "convergence_epoch": 6,
+      "converged": true,
+      "nn_params": 176714,
+      "total_params": 353428
+    },
+    {
+      "name": "Exp3 Grad step-size + Hessian decay",
+      "final_loss": 0.0008668718502701571,
+      "convergence_time_sec": 18.63119749998441,
+      "convergence_epoch": 2,
+      "converged": true,
+      "nn_params": 176714,
+      "total_params": 530142
+    },
+    {
+      "name": "Exp4 Hessian step-size (x budget)",
+      "final_loss": 0.4999009327570597,
+      "convergence_time_sec": 43.03748619998805,
+      "convergence_epoch": 5,
+      "converged": true,
+      "nn_params": 88617,
+      "total_params": 177234
+    },
+    {
+      "name": "Exp5 Gradient step-size (x budget)",
+      "final_loss": 0.32664179787635805,
+      "convergence_time_sec": 48.421952100005,
+      "convergence_epoch": 6,
+      "converged": true,
+      "nn_params": 88617,
+      "total_params": 177234
+    },
+    {
+      "name": "Exp6 Grad step-size + Hessian decay (x budget)",
+      "final_loss": 0.003096241163959106,
+      "convergence_time_sec": 16.78869759995723,
+      "convergence_epoch": 2,
+      "converged": true,
+      "nn_params": 58767,
+      "total_params": 176301
+    }
+  ]
+}
